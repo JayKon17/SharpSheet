@@ -1,0 +1,71 @@
+/* Ensure the html and body elements take up the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set up the body with a flex column layout */
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color: #001f3f; /* Dark blue background */
+    color: white;
+  }
+  
+  /* Title bar styling with fixed height */
+  .title-bar {
+    height: 60px;
+    background-color: #001a33; /* Slightly darker than the body background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  /* Container for the columns taking remaining height */
+  .container {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* Make columns extend to the container’s full height */
+    padding: 20px;
+  }
+  
+  /* Column styling */
+  .column {
+    background-color: #002a4e; /* Slightly lighter than the background */
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Box styling within each column */
+  .box {
+    background-color: #00365c; /* Even lighter shade for boxes */
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Ensure the last box in each column has no bottom margin */
+  .box:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .column {
+      margin: 10px 0;
+    }
+  }
+  
