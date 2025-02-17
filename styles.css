@@ -10,7 +10,7 @@ html, body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    background-color: #001f3f; /* Dark blue background */
+    background-color: #000000; /* Dark blue background */
     color: white;
   }
   
