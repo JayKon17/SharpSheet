@@ -1,0 +1,138 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: #121e3e; /* Dark Blue */
+  color: #f1f1f1; /* Light Font Color */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #0a1b37; /* Darker Blue */
+}
+
+.logo {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.sports-scores {
+  flex: 1;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: #1c2a4b; /* Slightly lighter blue */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav {
+  background-color: #0a1b37;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 10px 20px;
+  position: relative;
+}
+
+nav ul li:hover {
+  background-color: #1c2a4b; /* Light blue on hover */
+  cursor: pointer;
+}
+
+nav ul li:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1c2a4b;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.submenu li {
+  padding: 5px 15px;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-row {
+  display: flex;
+  flex-direction: column; /* Stack boxes in rows */
+  gap: 5px;
+}
+
+.content-box {
+  background-color: #1c2a4b;
+  padding: 20px;
+  border-radius: 5px;
+  height: 300px; /* Fixed height */
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.content-1 {
+  background-color: #0a1b37; /* Dark background for content box 1 */
+  height: 50px;
+}
+
+.sports-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Display items horizontally */
+  justify-content: center; /* Center links horizontally */
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Space between items */
+}
+
+.sports-links li {
+  display: flex;
+  align-items: center;
+}
+
+.sports-links a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.sports-links a i {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.sports-links a:hover {
+  color: #1c2a4b; /* Hover color */
+}
+
+footer {
+  background-color: #0a1b37;
+  padding: 20px;
+  text-align: center;
+  color: #f1f1f1;
+}

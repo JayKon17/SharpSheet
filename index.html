@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <title>SharpSheets</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"> <!-- Link to the external CSS file -->
+  <!-- Include Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="title-bar">Logo</div>
-    <div class="nav-main">
-        <div class="initial-spacer"></div>
-        <div class="menu-item">A</div>
-        <div class="menu-item">B</div>
-        <div class="menu-item">C</div>
-        <div class="menu-item">D</div>
-        <div class="menu-item">E</div>
-        <div class="menu-item">F</div>
-        <div class="spacer"></div>
-        <div class="menu-item login">Login</div>
-        <div class="menu-item join">Join Free</div>
-        <div class="initial-spacer"></div>
+  <header>
+    <div class="logo">
+      <img src="assets/logo.jpg" alt="Logo" width="100"> <!-- Updated logo path -->
     </div>
+    <div class="sports-scores">
+      <!-- Placeholder for scrollable sports scores module -->
+      <p>Sports Scores: [Scrolling Scores]</p>
+    </div>
+  </header>
 
-    <div class="main-container">Test</div>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Scores
+        <ul class="submenu">
+          <li>NBA</li>
+          <li>MLB</li>
+          <li>NFL</li>
+          <li>NHL</li>
+        </ul>
+      </li>
+      <li>News</li>
+      <li>Stats</li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="content-row">
+      <div class="content-box content-1">
+        <ul class="sports-links">
+            <li><a href="#"><i class="fas fa-soccer-ball"></i> All Sports</a></li> <!-- Multiple sports icon -->
+            <li><a href="#"><i class="fas fa-hockey-puck"></i> NHL</a></li>
+            <li><a href="#"><i class="fas fa-basketball-ball"></i> NBA</a></li>
+            <li><a href="#"><i class="fas fa-football-ball"></i> NFL</a></li>
+            <li><a href="#"><i class="fas fa-baseball-ball"></i> MLB</a></li>
+
+        </ul>
+      </div>
+      <div class="content-box">Content Box 2</div>
+      <div class="content-box">Content Box 3</div>
+    </div>
+    <!-- Additional rows can be added as needed -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sports Website. All rights reserved.</p>
+  </footer>
 </body>
 </html>
