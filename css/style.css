@@ -89,16 +89,19 @@ main {
 .content-row {
   display: flex;
   flex-direction: column; /* Stack boxes in rows */
+  align-self: center;
   gap: 5px;
 }
 
 .content-box {
+  display: flex;
   background-color: #1c2a4b;
   padding: 20px;
   border-radius: 5px;
-  height: 300px; /* Fixed height */
   width: 95vw;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center; /* Horizontally center the iframe */
 }
 
 .content-1 {
