@@ -36,6 +36,7 @@ nav {
   background-color: #0a1b37;
   padding: 10px 0;
   text-align: center;
+  margin-bottom: 0; /* Remove bottom margin to eliminate space below navbar */
 }
 
 nav ul {
@@ -73,10 +74,11 @@ nav ul li:hover .submenu {
 }
 
 main {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 0; /* Remove top margin */
 }
 
 .content-row {
@@ -87,25 +89,30 @@ main {
 
 .content-box {
   background-color: #1c2a4b;
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
   height: 300px; /* Fixed height */
   width: 100%;
   box-sizing: border-box;
-  align-items: center;
 }
 
 .content-1 {
   background-color: #0a1b37; /* Dark background for content box 1 */
   height: 50px;
+  display: flex;
+  justify-content: space-between; /* Align children with space in between */
+  align-items: center;
+}
+
+.left-links {
+  flex: 1; /* Take up available space on the left */
 }
 
 .sports-links {
   list-style-type: none;
   padding: 0;
   display: flex; /* Display items horizontally */
-  justify-content: center; /* Center links horizontally */
-  align-items: center; /* Align items vertically */
+  justify-content: flex-start; /* Left-align links */
   gap: 20px; /* Space between items */
 }
 
@@ -128,6 +135,38 @@ main {
 
 .sports-links a:hover {
   color: #1c2a4b; /* Hover color */
+}
+
+.spacer {
+  flex-grow: 1; /* Push buttons to the right */
+}
+
+.right-buttons {
+  display: flex;
+  gap: 20px; /* Space between the buttons */
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  background-color: #1c2a4b; /* Blue button */
+}
+
+.join-free {
+  background-color: #4CAF50; /* Green button */
+}
+
+.btn:hover {
+  opacity: 0.8; /* Hover effect */
 }
 
 footer {
